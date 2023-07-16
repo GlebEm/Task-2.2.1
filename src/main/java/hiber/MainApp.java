@@ -32,10 +32,7 @@ public class MainApp {
         userService.add(new User("Брюс", "Уэйн", "TheDarkKnight@mail.ru",cars.get(2)));
         userService.add(new User("Тревор", "Резник", "ElMaquinista@mail.ru",cars.get(3)));
         //
-//        Car car = new Car("TestCar", 1);
-//        User user1 = new User("Test", "Person", "test@mail.ru",car);
-//
-//        //
+
 
         List<User> users = userService.listUsers();
         for (User user : users) {
@@ -50,7 +47,6 @@ public class MainApp {
         System.out.println("Ищем DodgeRamTRX, 5ой серии");
         System.out.println(userService.findOwnerByModel("DodgeRamTRX",5));
         //Owning side - та сущность , где НЕ используется mappedBy
-        //Создайте несколько пользователей с машинами, добавьте их в базу данных, вытащите обратно.
 
         context.close();
     }
